@@ -1,9 +1,18 @@
-#test{
+*{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
     color: crimson;
 }
 
 body{
     color: #111;
     background-color: beige;
+}
+
+table {
+    background-color: white;
+    border-style: solid;
+    padding: 5px;
 }
