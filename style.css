@@ -16,3 +16,6 @@ table {
     border-style: solid;
     padding: 5px;
 }
+li{
+    padding-bottom: 4px;
+}
