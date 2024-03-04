@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <hr>
+    <h1>ERD</h1>
+    <hr>
+    <a href="../index.html">Tagasi</a>
+    <h2>Mis on ERD?</h2>
+    <p>
+        ERD ehk Entity Relationship Diagram/Model, Eesti keeles Olem Seos Mudel on teatud tüüpi struktuurskeem, mida kasutatakse andmebaasi kujundamisel. ERD sisaldab erinevaid sümboleid ja konnektoreid, mis visualiseerivad kahte olulist teavet: süsteemi ulatuse peamised olemid ja nende üksuste omavahelised suhted.
+    </p>
+
+    <h3>Pilt ERD-st</h3>
+    <img src="https://images.edrawsoft.com/articles/er-diagram-example/one-to-many-erd.png" height="300">
+
+    <h2>ERD kasutusalad</h2>
+    <li>Andmebaasi disain</li>
+    <li>Andmebaasi tõrkeotsing (troubleshooting)</li>
+    <li>Äriinfosüsteemid</li>
+    <li>Äriprotsesside ümberkujundamine</li>
+
+    <h2>ERD komponendid ja omadused</h2>
+    <h3>Entity / Olem</h3>
+    <p>
+        ERD olem on süsteemi sees määratletav asi või mõiste, näiteks isik/roll (nt õpilane), objekt (nt arve), kontseptsioon (nt profiil) või sündmus (nt tehing).  ERD mudelites näidatakse olemit ümardatud ristkülikuna, mille nimi on peal ja selle atribuudid on loetletud olemi kuju kehas.
+    </p>
+    <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/03-an-erd-entity.png">
+    <h3>Olemi atribuudid</h3>
+    <p>
+        Tuntud ka kui veerg (column), atribuut on olemi omadus. Atribuudil on nimi, mis kirjeldab atribuuti, ja andmetüüp, mis kirjeldab seda atribuuti, näiteks string varchar või int.
+    </p>
+    <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/04-an-erd-entity-with-entities.png">
+    <h3>Primary Key / Primaarvõti</h3>
+    <p>
+        Primaarvõti (PK) on eritüüpi olemiatribuut, mis määratleb unikaalselt andmebaasi tabelis admiku. Teisisõnu ei tohi olla kahte (või enamat) andmiku, millel on primaarvõtme atribuudi jaoks sama väärtus.
+    </p>
+    <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/05-concept-of-erd-primary-key.png">
+    <h3>Foreign Key / Võõrvõti</h3>
+    <p>
+        Võõrvõti on viide tabeli primaarvõtmele. Seda kasutatakse üksuste vaheliste suhete tuvastamiseks. Pange tähele, et võõrvõtmed ei pea olema kordumatud. Mitu andmiku võivad jagada samu väärtusi.
+    </p>
+    <img src="https://cdn-images.visual-paradigm.com/guide/data-modeling/what-is-erd/06-concept-of-erd-foreign-key.png">
+    <h3>Relationship / Seos</h3>
+    <p>
+        Kahe olemi vaheline suhe tähendab, et need kaks olemit on kuidagi üksteisega seotud. Näiteks võib üliõpilane registreeruda kursusele. Olem Üliõpilane on seetõttu seotud kursusega ja seost esitatakse nende vahel ühendava ühenduslülina.
+    </p>
+    <h3>Cardinality / Kardinaalsus</h3>
+    <p>
+        Kardinaalsus määrab võimaliku esinemiste arvu ühes olemis, mis on seotud esinemiste arvuga teises olemis. Näiteks ÜHES meeskonnas on MITU mängijat. Kui see on ERD-s, on üksus Meeskond ja Mängija omavahel seotud üks-mitmele suhtega.
+    </p>
+    <img src="https://help.lucid.co/hc/article_attachments/16471580520852" height="300">
+</body>
+</html>
